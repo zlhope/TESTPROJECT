@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "name": "test_login_success",
+      "full_name": "testcases/test_Jingdong1.py::TestCase::test_login_success",
+      "status": "passed",
+      "duration": 6.3260815143585205,
+      "start_time": "2025-11-09 13:20:18",
+      "steps": [],
+      "error_message": ""
+    }
+  ],
+  "summary": {
+    "total_tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate": "100.00%"
+  }
+}

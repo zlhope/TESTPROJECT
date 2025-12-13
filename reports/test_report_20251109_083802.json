@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "test_login_success",
+      "full_name": "testcases/test_Jingdong1.py::TestCase::test_login_success",
+      "status": "passed",
+      "duration": 5.861656904220581,
+      "start_time": "2025-11-09 08:37:24",
+      "steps": [],
+      "error_message": ""
+    },
+    {
+      "name": "test_open_gouwuche",
+      "full_name": "testcases/test_Jingdong2.py::TestCase::test_open_gouwuche",
+      "status": "passed",
+      "duration": 31.598921537399292,
+      "start_time": "2025-11-09 08:37:30",
+      "steps": [],
+      "error_message": ""
+    }
+  ],
+  "summary": {
+    "total_tests": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate": "100.00%"
+  }
+}

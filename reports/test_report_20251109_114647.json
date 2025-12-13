@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "name": "test_open_gouwuche",
+      "full_name": "testcases/test_Jingdong2.py::TestCase::test_open_gouwuche",
+      "status": "passed",
+      "duration": 31.501551628112793,
+      "start_time": "2025-11-09 11:46:15",
+      "steps": [],
+      "error_message": ""
+    }
+  ],
+  "summary": {
+    "total_tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate": "100.00%"
+  }
+}
