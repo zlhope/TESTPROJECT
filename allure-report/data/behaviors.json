@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "京东应用测试",
+    "children" : [ {
+      "name" : "登录功能",
+      "children" : [ {
+        "name" : "测试登录成功",
+        "uid" : "f30d29e798c9ef26",
+        "parentUid" : "690f2f898d3f78a799ba8031f617a903",
+        "status" : "passed",
+        "time" : {
+          "start" : 1766756545931,
+          "stop" : 1766756551952,
+          "duration" : 6021
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "690f2f898d3f78a799ba8031f617a903"
+    }, {
+      "name" : "特价功能",
+      "children" : [ {
+        "name" : "测试打开特价功能",
+        "uid" : "c7d64a389f5598b4",
+        "parentUid" : "d9f9d3d9da32c67bc2c24b0266baa822",
+        "status" : "passed",
+        "time" : {
+          "start" : 1766756552479,
+          "stop" : 1766756579757,
+          "duration" : 27278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d9f9d3d9da32c67bc2c24b0266baa822"
+    } ],
+    "uid" : "68d9eceb55e35968842c34cb2d9b7b3b"
+  } ]
+}

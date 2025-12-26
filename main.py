@@ -4,7 +4,7 @@ import sys
 import os
 import io
 import locale
-import xml.etree.ElementTree as ET
+import shutil
 from typing import Dict, Any, List
 
 # 设置标准输入输出编码
@@ -16,12 +16,7 @@ if hasattr(sys.stderr, 'buffer'):
 # 设置环境变量
 os.environ['PYTHONIOENCODING'] = 'utf-8'
 
-
 from aw.Utils import ConfigUtils
-from report import ResultCollector,generate_html_report, generate_json_report, generate_xml_report
-
-# 创建TestResultCollector实例
-test_collector = ResultCollector()
 
 def load_config():
     """
@@ -55,6 +50,9 @@ def run_tests():
     pytest_args = [
         "--tb=short",  # 简洁的错误追踪
         "-v",          # 详细输出
+        "--alluredir=./allure-results",  # Allure结果目录
+        "--clean-alluredir",  # 清理旧的allure结果
+        "--allure-no-capture",  # 禁用某些可能引起问题的捕获
         "testcases/"
     ]    
     
@@ -83,35 +81,27 @@ def run_tests():
     
     # 运行pytest并获取结果
     try:
-        exit_code = pytest.main(pytest_args,plugins=[test_collector])
+        exit_code = pytest.main(pytest_args)
     except UnicodeDecodeError as e:
         print(f"pytest运行时遇到编码错误: {e}")
         print("尝试使用UTF-8环境变量重新运行...")
         os.environ['PYTHONIOENCODING'] = 'utf-8'
         exit_code = pytest.main(pytest_args)
     
-    # 无论测试结果如何都生成报告
-    # 获取真实的测试结果
-    test_results = test_collector.get_results()
-    print(f"收集到的测试结果: {test_results}")  # 调试信息
-
-    # 添加调试信息
-    print(f"测试用例数量: {len(test_results['tests'])}")
-    for test in test_results['tests']:
-        print(f"测试用例: {test['full_name']}, 状态: {test['status']}")
-
-    # 生成不同格式的报告
+    # 生成Allure报告
     try:
-        html_path = generate_html_report(test_results)
-        json_path = generate_json_report(test_results)
-        xml_path = generate_xml_report(test_results)
-            
-        print(f"\n报告已生成:")
-        print(f"HTML报告: {html_path}")
-        print(f"JSON报告: {json_path}")
-        print(f"XML报告: {xml_path}")
+        # 检查是否安装了allure命令行工具
+        if shutil.which("allure"):
+            # 生成Allure HTML报告
+            os.system("allure generate ./allure-results -o ./allure-report --clean")
+            print("\nAllure报告已生成:")
+            print("报告位置: ./allure-report/")
+            print("要查看报告，请运行: allure open ./allure-report/")
+        else:
+            print("\n提示: 如需生成HTML报告，请安装Allure命令行工具")
+            print("报告数据已保存至: ./allure-results/")
     except Exception as e:
-        print(f"生成报告时出错: {e}")
+        print(f"生成Allure报告时出错: {e}")
     
     return exit_code
 
@@ -125,9 +115,6 @@ if __name__ == "__main__":
             locale.setlocale(locale.LC_ALL, 'C.UTF-8')
         except locale.Error:
             pass  # 使用系统默认
-    
-    # 加载配置
-    #load_config()
     
     # 运行测试
     exit_code = run_tests()

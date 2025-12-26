@@ -1,0 +1,21 @@
+[ {
+  "uid" : "c7d64a389f5598b4",
+  "name" : "测试打开特价功能",
+  "time" : {
+    "start" : 1766756552479,
+    "stop" : 1766756579757,
+    "duration" : 27278
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "f30d29e798c9ef26",
+  "name" : "测试登录成功",
+  "time" : {
+    "start" : 1766756545931,
+    "stop" : 1766756551952,
+    "duration" : 6021
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

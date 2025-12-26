@@ -2,18 +2,7 @@
 import pytest
 import os
 import xml.etree.ElementTree as ET
-from report import ResultCollector
 from aw.Utils import ConfigUtils
-
-# 创建全局的test_collector实例
-test_collector = None
-
-def pytest_configure(config):
-    """pytest配置时注册插件"""
-    global test_collector
-    test_collector = ResultCollector()
-    config.pluginmanager.register(test_collector, "test-result-collector")
-
 
 def pytest_collection_modifyitems(config, items):
     """
@@ -52,31 +41,19 @@ def pytest_collection_modifyitems(config, items):
                     print(f"最终选择 {len(items)} 个测试项执行")
                     
             except Exception as e:
-                print(f"从配置文件读取测试套件时出错: {e}")   
+                print(f"从配置文件读取测试套件时出错: {e}")
+
+def pytest_configure(config):
+    """pytest配置时添加allure报告目录"""
+    # 添加allure结果目录选项
+    if not config.getoption("--alluredir", None):
+        config.option.allure_report_dir = "./allure-results"
 
 def pytest_unconfigure(config):
-    """pytest结束时生成报告"""
-    global test_collector
-    if test_collector:
-        from report import generate_html_report, generate_json_report, generate_xml_report
-        
-        # 获取测试结果
-        test_results = test_collector.get_results()
-        
-        # 只有当有测试结果时才生成报告
-        if test_results and (test_results['summary']['total_tests'] > 0):
-            print(f"\n收集到的测试结果: {test_results}")
-            
-            try:
-                html_path = generate_html_report(test_results)
-                json_path = generate_json_report(test_results)
-                xml_path = generate_xml_report(test_results)
-                    
-                print(f"\n报告已生成:")
-                print(f"HTML报告: {html_path}")
-                print(f"JSON报告: {json_path}")
-                print(f"XML报告: {xml_path}")
-            except Exception as e:
-                print(f"生成报告时出错: {e}")
-        else:
-            print("\n没有测试结果需要生成报告")
+    """pytest结束时的清理工作"""
+    # Allure会自动处理报告生成，这里可以添加其他清理工作
+    print("\n测试执行完成，Allure报告已生成到 ./allure-results/ 目录")
+    print("使用以下命令查看报告:")
+    print("  allure serve ./allure-results")
+    print("或生成静态报告:")
+    print("  allure generate ./allure-results -o ./allure-report --clean")

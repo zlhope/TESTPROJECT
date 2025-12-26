@@ -1,0 +1,201 @@
+{
+  "uid" : "c7d64a389f5598b4",
+  "name" : "测试打开特价功能",
+  "fullName" : "testcases.test_Jingdong2.TestCase#test_open_tejia",
+  "historyId" : "52fe549cc5e4cbb56c7147e4bacc9513",
+  "time" : {
+    "start" : 1766756552479,
+    "stop" : 1766756579757,
+    "duration" : 27278
+  },
+  "description" : "验证用户能够成功打开京东特价功能并进入特价界面",
+  "descriptionHtml" : "<p>验证用户能够成功打开京东特价功能并进入特价界面</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestCase",
+    "time" : {
+      "start" : 1766756552295,
+      "stop" : 1766756552479,
+      "duration" : 184
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "初始化测试环境",
+      "time" : {
+        "start" : 1766756552296,
+        "stop" : 1766756552479,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "method",
+        "value" : "<bound method TestCase.test_open_tejia of <testcases.test_Jingdong2.TestCase object at 0x0000019F99324A50>>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "testStage" : {
+    "description" : "验证用户能够成功打开京东特价功能并进入特价界面",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "启动京东应用",
+      "time" : {
+        "start" : 1766756552480,
+        "stop" : 1766756553043,
+        "duration" : 563
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "等待应用首页加载完成",
+      "time" : {
+        "start" : 1766756553043,
+        "stop" : 1766756558044,
+        "duration" : 5001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "查找并点击特价按钮",
+      "time" : {
+        "start" : 1766756558044,
+        "stop" : 1766756579755,
+        "duration" : 21711
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "625275368e29094c",
+        "name" : "点击状态",
+        "source" : "625275368e29094c.txt",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestCase::0",
+    "time" : {
+      "start" : 1766756579760,
+      "stop" : 1766756580029,
+      "duration" : 269
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "清理测试环境",
+      "time" : {
+        "start" : 1766756579760,
+        "stop" : 1766756580029,
+        "duration" : 269
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "method",
+        "value" : "<bound method TestCase.test_open_tejia of <testcases.test_Jingdong2.TestCase object at 0x0000019F99324A50>>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "regression"
+  }, {
+    "name" : "tag",
+    "value" : "tejia"
+  }, {
+    "name" : "feature",
+    "value" : "京东应用测试"
+  }, {
+    "name" : "story",
+    "value" : "特价功能"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_Jingdong2"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-02I7ENH"
+  }, {
+    "name" : "thread",
+    "value" : "22052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_Jingdong2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tejia", "regression" ]
+  },
+  "source" : "c7d64a389f5598b4.json",
+  "parameterValues" : [ ]
+}

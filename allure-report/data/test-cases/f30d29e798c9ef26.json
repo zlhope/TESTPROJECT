@@ -1,0 +1,213 @@
+{
+  "uid" : "f30d29e798c9ef26",
+  "name" : "测试登录成功",
+  "fullName" : "testcases.test_Jingdong1.TestCase#test_login_success",
+  "historyId" : "ddb3502b8d944aae384a79fd7b5603fa",
+  "time" : {
+    "start" : 1766756545931,
+    "stop" : 1766756551952,
+    "duration" : 6021
+  },
+  "description" : "验证用户能够成功启动京东应用并进入首页",
+  "descriptionHtml" : "<p>验证用户能够成功启动京东应用并进入首页</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestCase",
+    "time" : {
+      "start" : 1766756543156,
+      "stop" : 1766756545929,
+      "duration" : 2773
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "初始化测试环境",
+      "time" : {
+        "start" : 1766756543156,
+        "stop" : 1766756545928,
+        "duration" : 2772
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "method",
+        "value" : "<bound method TestCase.test_login_success of <testcases.test_Jingdong1.TestCase object at 0x0000019F993242D0>>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "testStage" : {
+    "description" : "验证用户能够成功启动京东应用并进入首页",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "启动京东应用",
+      "time" : {
+        "start" : 1766756545932,
+        "stop" : 1766756546577,
+        "duration" : 645
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "等待应用加载",
+      "time" : {
+        "start" : 1766756546577,
+        "stop" : 1766756551578,
+        "duration" : 5001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "检查首页是否出现",
+      "time" : {
+        "start" : 1766756551578,
+        "stop" : 1766756551578,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "验证首页加载成功",
+      "time" : {
+        "start" : 1766756551578,
+        "stop" : 1766756551950,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestCase::0",
+    "time" : {
+      "start" : 1766756551955,
+      "stop" : 1766756552268,
+      "duration" : 313
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "清理测试环境",
+      "time" : {
+        "start" : 1766756551955,
+        "stop" : 1766756552268,
+        "duration" : 313
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "method",
+        "value" : "<bound method TestCase.test_login_success of <testcases.test_Jingdong1.TestCase object at 0x0000019F993242D0>>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录功能"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "feature",
+    "value" : "京东应用测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_Jingdong1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-02I7ENH"
+  }, {
+    "name" : "thread",
+    "value" : "22052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_Jingdong1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "smoke", "login" ]
+  },
+  "source" : "f30d29e798c9ef26.json",
+  "parameterValues" : [ ]
+}

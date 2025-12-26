@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 26 21:42:32 CST 2025","Fri Dec 26 21:42:59 CST 2025","27278","testcases","test_Jingdong2","TestCase","","","测试打开特价功能","验证用户能够成功打开京东特价功能并进入特价界面"
+"passed","Fri Dec 26 21:42:25 CST 2025","Fri Dec 26 21:42:31 CST 2025","6021","testcases","test_Jingdong1","TestCase","","","测试登录成功","验证用户能够成功启动京东应用并进入首页"

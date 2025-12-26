@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-02I7ENH",
+    "children" : [ {
+      "name" : "22052-MainThread",
+      "children" : [ {
+        "name" : "测试登录成功",
+        "uid" : "f30d29e798c9ef26",
+        "parentUid" : "cc14798b87b0c5bcf04feb56b32a6893",
+        "status" : "passed",
+        "time" : {
+          "start" : 1766756545931,
+          "stop" : 1766756551952,
+          "duration" : 6021
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试打开特价功能",
+        "uid" : "c7d64a389f5598b4",
+        "parentUid" : "cc14798b87b0c5bcf04feb56b32a6893",
+        "status" : "passed",
+        "time" : {
+          "start" : 1766756552479,
+          "stop" : 1766756579757,
+          "duration" : 27278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cc14798b87b0c5bcf04feb56b32a6893"
+    } ],
+    "uid" : "31ceff5fa2bd55d484595a8959b4897d"
+  } ]
+}

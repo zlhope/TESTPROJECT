@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcases",
+    "children" : [ {
+      "name" : "test_Jingdong1",
+      "children" : [ {
+        "name" : "TestCase",
+        "children" : [ {
+          "name" : "测试登录成功",
+          "uid" : "f30d29e798c9ef26",
+          "parentUid" : "dc3fea80117d6462a2a04bac1966c77d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1766756545931,
+            "stop" : 1766756551952,
+            "duration" : 6021
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "dc3fea80117d6462a2a04bac1966c77d"
+      } ],
+      "uid" : "d4705ce4b048d0460930f78e57352da0"
+    }, {
+      "name" : "test_Jingdong2",
+      "children" : [ {
+        "name" : "TestCase",
+        "children" : [ {
+          "name" : "测试打开特价功能",
+          "uid" : "c7d64a389f5598b4",
+          "parentUid" : "6a67f70113cfdea7303a53cece82178c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1766756552479,
+            "stop" : 1766756579757,
+            "duration" : 27278
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6a67f70113cfdea7303a53cece82178c"
+      } ],
+      "uid" : "56b823bcbd340981973e2bbe1363d90f"
+    } ],
+    "uid" : "b51346658ccdb9db01a6b5f6c12deab1"
+  } ]
+}
